@@ -1,0 +1,133 @@
+body {
+	background-color: #022137;
+  }
+  .emoji-toggle {
+	position: relative;
+	width: 60px;
+	margin: 40px auto;
+  }
+  .emoji-toggle .well {
+	display: block;
+	background: #eee;
+	height: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+  }
+  .emoji-toggle .toggle {
+	opacity: 0;
+	border: 0;
+	outline: none;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+  }
+  .emoji-toggle .toggle ~ .emoji:before {
+	content: "\01F431";
+	position: absolute;
+	left: 0;
+	top: -15px;
+	font-size: 40px;
+	transition: 0.2s;
+  }
+  .emoji-toggle .toggle:checked ~ .emoji:before {
+	left: 100%;
+	margin-left: -1em;
+  }
+  .emoji-toggle .toggle ~ label {
+	white-space: nowrap;
+  }
+  .emoji-toggle .toggle ~ label:before {
+	position: absolute;
+	right: 100%;
+	margin-right: 5px;
+	top: 0;
+  }
+  .emoji-toggle .toggle ~ label:after {
+	position: absolute;
+	left: 100%;
+	margin-left: 5px;
+	top: 0;
+  }
+  .emoji-happy .toggle ~ .emoji:before {
+	content: "\01F604";
+  }
+  .emoji-happy .toggle:checked ~ .emoji:before {
+	content: "\01F620";
+  }
+  .emoji-happy .toggle ~ label:before {
+	content: "Happy";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-happy .toggle ~ label:after {
+	content: "Mad";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-travel .toggle ~ .emoji:before {
+	content: "\02708";
+  }
+  .emoji-travel .toggle:checked ~ .emoji:before {
+	content: "\01F683";
+  }
+  .emoji-travel .toggle ~ label:before {
+	content: "Plane";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-travel .toggle ~ label:after {
+	content: "Train";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-food .toggle ~ .emoji:before {
+	content: "\01F354";
+  }
+  .emoji-food .toggle:checked ~ .emoji:before {
+	content: "\01F355";
+  }
+  .emoji-food .toggle ~ label:before {
+	content: "Burger";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-food .toggle ~ label:after {
+	content: "Pizza";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-vote .toggle ~ .emoji:before {
+	content: "\01F44D";
+  }
+  .emoji-vote .toggle:checked ~ .emoji:before {
+	content: "\01F44E";
+  }
+  .emoji-vote .toggle ~ label:before {
+	content: "Thumbs Up";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-vote .toggle ~ label:after {
+	content: "Thumbs Down";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-love .toggle ~ .emoji:before {
+	content: "\01F498";
+  }
+  .emoji-love .toggle:checked ~ .emoji:before {
+	content: "\01F494";
+  }
+  .emoji-love .toggle ~ label:before {
+	content: "Loves Me";
+	color: #eee;
+	font-size: 20px;
+  }
+  .emoji-love .toggle ~ label:after {
+	content: "Loves Me Not";
+	color: #eee;
+	font-size: 20px;
+  }
